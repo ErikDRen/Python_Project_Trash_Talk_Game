@@ -14,6 +14,23 @@ print('\n' +
 )
 getChar = str(input())
 
+#error if the player do not enter a valid command
+if len(getChar) == 1:
+    while getChar != '1' and getChar != '2' and getChar != '3' and getChar != '4' and getChar != '5':
+        print('Error: You have to choose a right number')
+        getChar = str(input())
+elif len(getChar) == 2:
+#error if player do not enter a "?" for informations    
+    while getChar[0] != '?':
+        print('Error: Missing "?"')
+        getChar = str(input())
+#error if player enter a "?" but NAN        
+    if getChar[0] == '?':     
+        next     
+        if getChar[1] != '1' and getChar[1] != '2' and getChar[1] != '3' and getChar[1] != '4' and getChar[1] != '5':
+            print('Error: You have to choose a right number')
+            getChar = str(input())
+
 print(detect(getChar))
 
 
