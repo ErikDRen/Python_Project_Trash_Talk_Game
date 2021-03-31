@@ -1,1 +1,11 @@
-test
+Bagarre d'insulte 1v1
+tour par tour 
+- le 1er a 4 point win
+- x insultes disponibles (disparaisse après utilisation)
+
+Avancement:
+Joueur 1 a son pseudo + son perso
+gestion d'erreur si joueur 1 choisis un perso qui existe pas 
+gestion d'erreur si joueur 1 veut info sur un perso qui existe pas 
+
+reste a ajouter la desription des persos
