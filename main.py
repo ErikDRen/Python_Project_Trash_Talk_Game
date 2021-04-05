@@ -1,5 +1,6 @@
 from player import player
 from fct import *
+from wordList import wordlist
 
 # --- REGISTER TIME ---
 
@@ -42,6 +43,7 @@ print(p1.name + ' VS ' + p2.name + ' FIGHT !')
 
 Turnp1 = 'Player 1, your turn.'
 Turnp2 = 'Player 2, your turn.'
+print('p1 : ' + mainTab)
 # 1. choose subject
 # 2. Choose verb
 # 3. Choose situation
