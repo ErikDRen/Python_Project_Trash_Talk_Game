@@ -3,6 +3,9 @@ from fct import *
 from wordList import wordList
 from Remplir_Tab import *
 
+
+
+
 # --- REGISTER TIME ---
 
 # Player1 will enter his username
@@ -22,11 +25,6 @@ print(errChar(getChar))
 # print(detect(getChar))
 
 
-# Will fill p1's info
-p1 = player(username1, giveChar(getChar),[],[])
-
-tab = wordList()
-tab.fillMainTab()
 # p2 enter his username
 print('Player2, Choose your username : ')
 username2 = str(input())
@@ -38,13 +36,17 @@ print('\n' +
       )
 getChar2 = str(input())
 
+# Will fill p1's info
+p1 = player(username1, giveChar(getChar))
+
 # Will fill p2's info
-p2 = player(username2, giveChar(getChar2),[],[])
+p2 = player(username2, giveChar(getChar2))
+
+tab = wordList()
+tab.fillMainTab()
 
 
 print(p1.name + ' VS ' + p2.name + ' FIGHT !')
-
-
 
 addSubject(tab.subjecTab,tab.mainTab)
 addVerb(tab.verbTab,tab.mainTab)
@@ -53,3 +55,8 @@ addEnd(tab.endTab,tab.mainTab)
 addLink(tab.linkTab,tab.mainTab)
 mixTab(tab.mainTab)
 print(tab)
+
+
+print(p1.selectedWord)
+choose = sentence(p1.selectedWord,tab.mainTab)
+print(p1.selectedWord)

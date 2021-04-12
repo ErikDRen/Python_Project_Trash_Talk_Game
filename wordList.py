@@ -5,16 +5,15 @@ class wordList:
     def __str__(self):
         return str(self.mainTab)
 
-    def fillMainTab():
-        subjecTab = [
+    def fillMainTab(self):
+        self.subjecTab = [
             'Your sister',
             'Your dad',
             'You',
             'Your skill',
             'Your IQ',
-
         ]
-        verbTab = [
+        self.verbTab = [
             'looks like',
             'is like',
             'eats',
@@ -23,7 +22,7 @@ class wordList:
             'sniff',
             'is',
         ]
-        complementab = [
+        self.complementab = [
             'a fish',
             'a dog',
             'the floor',
@@ -31,14 +30,14 @@ class wordList:
             'an empty hole',
             'idiot'
         ]
-        endTab = [
+        self.endTab = [
             'hairless',
             'abandoned',
             'lost',
             'rotten',
             'so stupid'
         ]
-        linkTab = [
+        self.linkTab = [
             'and',
             'also',
             'too',

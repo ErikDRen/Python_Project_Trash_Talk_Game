@@ -1,6 +1,10 @@
 from random import shuffle
+from wordList import *
+from player import *
 
 # Will give the selecter character to the player
+
+
 def giveChar(stre):
 
     selectedChar = ''
@@ -64,7 +68,7 @@ def errChar(getChar):
             print('Error: You have to choose a right number')
             getChar = str(input())
     elif len(getChar) == 2:
-# error if player do not enter a "?" for informations
+        # error if player do not enter a "?" for informations
         while getChar[0] != '?':
             print('Error: Missing "?"')
             getChar = str(input())
@@ -91,23 +95,19 @@ def mixTab(mainTab):
 # print(L)
 
 # create a sentence for  P1
-def sentencePOne(mainTab, wordPOne):
-    chooseOne == input()
-    for i in range(0, len(mainTab), 1)
-       if (mainTab[i] == chooseOne):
-            wordPOne.append(mainTab[i])
-        else:
-            print('out of range, choose another number pls')
-            chooseOne = int(input())
-    return wordPOne
 
 
-def sentencePTwo(mainTab, wordPTwo):
-    chooseOne = int(input())
-    for i in range(0, len(mainTab), 1)
-       if (mainTab[i] == chooseOne):
-            wordPTwo.append(mainTab[i])
-        else:
-            print('out of range, choose another number pls')
-            chooseOne = int(input())
-    return wordPTwo
+def sentence(selectedWord,mainTab):
+        # for i in range(0,len(mainTab),1):
+        #     selected = input()
+        #     if (selected == i):
+        #         selectedWord.append(mainTab[i])
+        #     else:
+        #         print('out of range, choose another number pls')
+        #         selected = input()
+        # return selectedWord
+        selected = int(input())
+        selectedWord.append(mainTab[selected])
+
+
+
