@@ -108,6 +108,7 @@ def sentence(selectedWord,mainTab):
         # return selectedWord
         selected = int(input())
         selectedWord.append(mainTab[selected])
+        mainTab.remove(mainTab[selected])
 
 
 
