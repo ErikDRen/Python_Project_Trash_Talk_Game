@@ -1,17 +1,18 @@
-from math import random 
-
-class wordlist:
-    def __init__(self,list):
+class wordList:
+    def __init__(self):
         self.mainTab = []
-        
+
+    def __str__(self):
+        return str(self.mainTab)
+
     def fillMainTab():
         subjecTab = [
             'Your sister',
             'Your dad',
             'You',
-            'Your skill', 
+            'Your skill',
             'Your IQ',
-            
+
         ]
         verbTab = [
             'looks like',
@@ -21,7 +22,7 @@ class wordlist:
             'loves',
             'sniff',
             'is',
-        ]   
+        ]
         complementab = [
             'a fish',
             'a dog',
