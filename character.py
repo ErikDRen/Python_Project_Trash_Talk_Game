@@ -4,17 +4,17 @@ class character:
         self.name = name
         # Corentin wins more points using words of subjectab
         if name == 'Corentin' :
-            self.bonus = 2 
-        else if name == 'Juliette' :
+            self.bonus = 2
+        elif name == 'Juliette' :
         # Juliette wins more points using words of vertab
             self.bonus = 2
-        else if name == 'Jean' : 
+        elif name == 'Jean' : 
         # Jean wins more points using words of complementab
             self.bonus = 2
-        else if name == 'Aurélie':
+        elif name == 'Aurélie':
         # Aurélie wins more points using words of endtab
             self.bonus = 2
-        else if name == 'Francis':
+        elif name == 'Francis':
         # Francis wins more points using words of linktab
             self.bonus = 2
 

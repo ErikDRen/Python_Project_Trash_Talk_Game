@@ -2,8 +2,7 @@ class wordList:
     def __init__(self):
         self.mainTab = []
 
-    def __str__(self):
-        return str(self.mainTab)
+
 
     def fillMainTab(self):
         self.subjecTab = [
@@ -17,7 +16,6 @@ class wordList:
             'looks like',
             'is like',
             'eats',
-            ''
             'loves',
             'sniff',
             'is',
@@ -43,3 +41,6 @@ class wordList:
             'too',
             'moreover',
         ]
+        
+    def __str__(self):
+        return str(self.mainTab)

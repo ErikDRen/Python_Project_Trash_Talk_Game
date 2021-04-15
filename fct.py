@@ -1,6 +1,7 @@
 from random import shuffle
 from wordList import *
 from player import *
+from character import *
 
 # Will give the selecter character to the player
 
@@ -97,18 +98,22 @@ def mixTab(mainTab):
 # create a sentence for  P1
 
 
-def sentence(selectedWord,mainTab):
-        # for i in range(0,len(mainTab),1):
-        #     selected = input()
-        #     if (selected == i):
-        #         selectedWord.append(mainTab[i])
-        #     else:
-        #         print('out of range, choose another number pls')
-        #         selected = input()
-        # return selectedWord
-        selected = int(input())
-        selectedWord.append(mainTab[selected])
-        mainTab.remove(mainTab[selected])
+def sentence(selectedWord, mainTab):
+    # for i in range(0,len(mainTab),1):
+    #     selected = input()
+    #     if (selected == i):
+    #         selectedWord.append(mainTab[i])
+    #     else:
+    #         print('out of range, choose another number pls')
+    #         selected = input()
+    # return selectedWord
+    selected = int(input())
+    selectedWord.append(mainTab[selected])
+    mainTab.remove(mainTab[selected])
 
 
-
+def scoreCal(selectedWord):
+    score = 0
+    score += len(selectedWord) * 5
+    # score += bonus;
+    return score

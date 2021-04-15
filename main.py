@@ -36,17 +36,20 @@ print('\n' +
       )
 getChar2 = str(input())
 
+char = giveChar(getChar)
+
 # Will fill p1's info
-p1 = player(username1, giveChar(getChar))
+p1 = player(username1, char)
 
 # Will fill p2's info
-p2 = player(username2, giveChar(getChar2))
+p2 = player(username2,char)
 
 tab = wordList()
 tab.fillMainTab()
 
-
+print('\n')
 print(p1.name + ' VS ' + p2.name + ' FIGHT !')
+print('\n')
 
 addSubject(tab.subjecTab,tab.mainTab)
 addVerb(tab.verbTab,tab.mainTab)
@@ -55,8 +58,32 @@ addEnd(tab.endTab,tab.mainTab)
 addLink(tab.linkTab,tab.mainTab)
 mixTab(tab.mainTab)
 print(tab)
+print('\n')
 
+while (len(tab.mainTab) > 10) :
+ 
+      choose = sentence(p1.selectedWord,tab.mainTab)
+      print('\n')
+      print('p1 choose : ',p1.selectedWord)
+      print('\n')
+      print(tab)
+      print('\n')
+      print(p2.selectedWord)
+      print('\n')
+      choose = sentence(p2.selectedWord,tab.mainTab)
+      print('\n')
+      print('p2 choose : ',p2.selectedWord)
+      print('\n')
+      print(tab)
+      print('\n')
+      print(p1.selectedWord)
+      print('\n')
 
-print(p1.selectedWord)
-choose = sentence(p1.selectedWord,tab.mainTab)
-print(p1.selectedWord)
+scoreP1 = scoreCal(p1.selectedWord)
+scoreP2 = scoreCal(p2.selectedWord)
+
+print('p1 : ',p1.selectedWord,'\n','p2 : ',p2.selectedWord)
+print('\n')
+print('p1 point :',scoreP1)
+print('\n')
+print('p1 win')
