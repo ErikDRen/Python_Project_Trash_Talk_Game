@@ -60,30 +60,26 @@ mixTab(tab.mainTab)
 print(tab)
 print('\n')
 
-while (len(tab.mainTab) > 10) :
+
+
+while (len(tab.mainTab) > 10 ) :
  
       choose = sentence(p1.selectedWord,tab.mainTab)
-      print('\n')
       print('p1 choose : ',p1.selectedWord)
       print('\n')
       print(tab)
       print('\n')
-      print(p2.selectedWord)
-      print('\n')
+
       choose = sentence(p2.selectedWord,tab.mainTab)
-      print('\n')
       print('p2 choose : ',p2.selectedWord)
       print('\n')
       print(tab)
       print('\n')
-      print(p1.selectedWord)
-      print('\n')
+
 
 scoreP1 = scoreCal(p1.selectedWord)
 scoreP2 = scoreCal(p2.selectedWord)
 
 print('p1 : ',p1.selectedWord,'\n','p2 : ',p2.selectedWord)
-print('\n')
-print('p1 point :',scoreP1)
-print('\n')
-print('p1 win')
+print('p1 point :',scoreP1, 'and p2 point :',scoreP2)
+
