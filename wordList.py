@@ -2,8 +2,6 @@ class wordList:
     def __init__(self):
         self.mainTab = []
 
-
-
     def fillMainTab(self):
         self.subjecTab = [
             'Your sister',

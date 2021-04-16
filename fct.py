@@ -107,13 +107,32 @@ def sentence(selectedWord, mainTab):
     #         print('out of range, choose another number pls')
     #         selected = input()
     # return selectedWord
+
     selected = int(input())
-    selectedWord.append(mainTab[selected])
-    mainTab.remove(mainTab[selected])
+    if (selected < 20):
+        selectedWord.append(mainTab[selected])
+        mainTab.remove(mainTab[selected])
+    elif (selected > 20):
+        print('out of range choose another number pls')
+        selected = int(input())
+    else:
+        return selected
+
+
+
+
 
 
 def scoreCal(selectedWord):
     score = 0
     score += len(selectedWord) * 5
-    # score += bonus;
     return score
+
+
+def multiplicateur(sentence, score):
+    finalScore = score
+    if character.name == 'Corentin':
+        for i in sentence: 
+            if len(sentence[i] == 1):
+                finalScore += character.bonus
+    return finalScore 
