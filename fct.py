@@ -119,10 +119,6 @@ def sentence(selectedWord, mainTab):
         return selected
 
 
-
-
-
-
 def scoreCal(selectedWord):
     score = 0
     score += len(selectedWord) * 5
@@ -136,3 +132,4 @@ def multiplicateur(sentence, score):
             if len(sentence[i] == 1):
                 finalScore += character.bonus
     return finalScore 
+
